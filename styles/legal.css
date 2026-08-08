@@ -1,0 +1,76 @@
+/* ============================================================
+   PAGES LÉGALES — mentions, confidentialité, CGV
+   ============================================================ */
+
+.legal{
+  max-width:800px;
+  margin:0 auto;
+  padding:64px 24px 80px;
+}
+.legal__back{
+  display:inline-flex; align-items:center; gap:7px;
+  margin-bottom:32px;
+  font-size:12px; font-weight:600; color:var(--ink-soft);
+  text-decoration:none;
+  transition:color .25s ease, gap .25s var(--ease-spring);
+}
+.legal__back svg{ width:15px; height:15px }
+.legal__back:hover{ color:var(--brand); gap:11px }
+
+.legal__brand img{ height:28px; width:auto; display:block; margin-bottom:28px }
+
+.legal h1{
+  font-size:clamp(26px, 4vw, 36px);
+  font-weight:700; letter-spacing:-.03em; line-height:1.12;
+}
+.legal__date{
+  margin-top:10px;
+  font-size:12px; font-weight:500; color:var(--ink-mute);
+}
+
+.legal h2{
+  margin-top:38px; margin-bottom:12px;
+  font-size:16px; font-weight:700; letter-spacing:-.02em;
+  color:var(--brand);
+}
+.legal h3{
+  margin-top:22px; margin-bottom:8px;
+  font-size:13.5px; font-weight:700; letter-spacing:-.01em;
+}
+.legal p{
+  margin-top:12px;
+  font-size:13.5px; line-height:1.75; font-weight:500; color:#3E453F;
+}
+.legal ul{ margin-top:12px; padding-left:4px; list-style:none }
+.legal li{
+  position:relative;
+  margin-top:9px; padding-left:20px;
+  font-size:13.5px; line-height:1.7; font-weight:500; color:#3E453F;
+}
+.legal li::before{
+  content:""; position:absolute; left:2px; top:9px;
+  width:5px; height:5px; border-radius:50%; background:var(--brand-soft);
+}
+.legal b{ font-weight:700; color:var(--ink) }
+.legal a{ color:var(--brand); font-weight:600; text-decoration:none; border-bottom:1.5px solid var(--brand-soft) }
+.legal a:hover{ border-bottom-color:var(--brand) }
+
+.legal__box{
+  margin-top:16px; padding:18px 20px;
+  border-radius:14px;
+  background:#FBFAF7;
+  box-shadow:0 0 0 1px #E9E7E1 inset;
+}
+.legal__box p{ margin-top:6px }
+.legal__box p:first-child{ margin-top:0 }
+
+.legal__footer{
+  margin-top:56px; padding-top:24px;
+  border-top:1px solid #E9E7E1;
+  font-size:11.5px; color:var(--ink-mute);
+}
+
+@media (max-width:640px){
+  .legal{ padding:40px 16px 60px }
+  .legal p, .legal li{ font-size:13px }
+}

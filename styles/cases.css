@@ -1,0 +1,182 @@
+/* ============================================================
+   SECTION 6 — LES CAMPAGNES EN DÉTAIL
+   Suite directe de la section 5 : même fond blanc, une carte
+   par compte, capture en grand + chiffres + argumentaire.
+   Compteurs animés par scripts/cases.js + counters.js
+   ============================================================ */
+
+.cases{
+  padding:70px 46px 66px;
+  background:#ffffff;
+  --grain-opacity:.1;
+}
+
+.cases__head{ position:relative; z-index:2; max-width:640px; margin:0 auto; text-align:center }
+.cases__eyebrow{
+  display:inline-block; margin-bottom:14px;
+  font-size:10.5px; font-weight:800; letter-spacing:.16em;
+  color:var(--brand);
+}
+.cases__head h2{
+  font-size:clamp(24px, 3vw, 34px);
+  font-weight:700; line-height:1.16; letter-spacing:-.032em;
+}
+.cases__head h2 em{
+  font-family:var(--font-serif); font-style:italic; font-weight:500;
+  color:var(--brand); font-size:1.05em; letter-spacing:-.005em;
+}
+.cases__head p{
+  margin-top:14px;
+  font-size:12.5px; line-height:1.75; font-weight:500;
+  color:var(--ink-soft);
+}
+
+.cases__grid{
+  position:relative; z-index:2;
+  margin-top:52px;
+  display:grid; grid-template-columns:repeat(2, 1fr); gap:20px;
+}
+
+/* ============================================================
+   CARTE COMPTE
+   ============================================================ */
+.case{
+  position:relative; overflow:hidden;
+  display:flex; flex-direction:column;
+  padding:14px 14px 0;
+  border-radius:20px;
+  background:#FBFAF7;
+  box-shadow:0 0 0 1px #E9E7E1 inset, 0 14px 30px -22px rgba(15,25,20,.35);
+  transition:transform .55s var(--ease-out), box-shadow .55s ease;
+}
+.cases__grid .case.reveal{ opacity:0; transform:translateY(28px) scale(.985) }
+.cases__grid .case.reveal.in{
+  opacity:1; transform:none;
+  transition:
+    opacity   .7s ease            var(--rv, 0s),
+    transform .9s var(--ease-out) var(--rv, 0s);
+}
+.cases__grid .case:hover{
+  transform:translateY(-8px);
+  box-shadow:
+    0 0 0 1px rgba(9,73,47,.35) inset,
+    0 30px 48px -26px rgba(9,73,47,.42);
+}
+
+/* ---------- fenêtre de capture ---------- */
+.case__window{
+  position:relative; overflow:hidden;
+  border-radius:12px;
+  background:#F1EFEA;
+  box-shadow:0 0 0 1px #E6E3DC inset;
+}
+.case__chrome{ display:flex; gap:5px; padding:9px 11px }
+.case__chrome span{ width:8px; height:8px; border-radius:50%; background:#D6D3CB }
+.case__shot{ position:relative; overflow:hidden; aspect-ratio:16/9; background:#fff }
+.case__shot img{
+  width:100%; height:100%; object-fit:cover; display:block;
+  transition:transform .8s var(--ease-out);
+}
+.case:hover .case__shot img{ transform:scale(1.04) }
+/* reflet qui balaie la capture */
+.case__shot::after{
+  content:""; position:absolute; inset:0; z-index:2; pointer-events:none;
+  background:linear-gradient(104deg, transparent 36%, rgba(255,255,255,.5) 50%, transparent 64%);
+  transform:translateX(-118%);
+}
+.case:hover .case__shot::after{
+  transform:translateX(118%);
+  transition:transform 1s cubic-bezier(.32,.66,.28,1);
+}
+
+/* ---------- corps ---------- */
+.case__body{ padding:20px 10px 22px }
+
+.case__head{ display:flex; align-items:center; justify-content:space-between; gap:12px }
+.case__head h3{ font-size:17px; font-weight:700; letter-spacing:-.028em }
+
+.case__badge{
+  flex:0 0 auto;
+  display:inline-flex; align-items:center; gap:5px;
+  padding:4px 9px; border-radius:999px;
+  background:#F0EEE9;
+  box-shadow:0 0 0 1px #E4E1DA inset;
+  font-size:9px; font-weight:700; letter-spacing:.03em;
+  color:#414944;
+}
+.case__badge::before{ content:""; width:5px; height:5px; border-radius:50%; background:var(--dot,#4285F4) }
+.case__badge--google{ --dot:#4285F4 }
+.case__badge--meta{ --dot:#0866FF }
+
+/* ---------- ligne de chiffres ---------- */
+.case__stats{
+  display:grid; grid-template-columns:repeat(3, 1fr); gap:12px;
+  margin-top:20px; padding-bottom:20px;
+  border-bottom:1px solid #EAE7E1;
+}
+.case__stats b{
+  display:block;
+  font-family:var(--font-mono);
+  font-size:20px; font-weight:600; letter-spacing:.01em; line-height:1.1;
+  font-variant-numeric:tabular-nums;
+  color:var(--brand);
+}
+/* pastille devise devant les montants en euros */
+.case__stats div[data-cur]{ position:relative }
+.case__stats div[data-cur] i::before{
+  content:attr(data-cur);
+  display:inline-grid; place-items:center;
+  width:14px; height:14px; margin-right:5px; vertical-align:-2px;
+  border-radius:50%;
+  background:rgba(9,73,47,.1); color:var(--brand);
+  font-size:8px; font-weight:800;
+}
+.case__stats i{
+  display:block; margin-top:6px; font-style:normal;
+  font-size:9px; font-weight:700; letter-spacing:.11em;
+  color:#9AA09B;
+}
+
+.case__text{
+  margin-top:20px;
+  font-size:12.5px; line-height:1.72; font-weight:500;
+  color:#4E5651;
+}
+.case__note{
+  margin-top:14px;
+  font-size:10.5px; line-height:1.6; font-weight:500;
+  color:#A2A8A3;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .cases{ padding:56px 26px 52px; border-radius:24px }
+  .cases__grid{ grid-template-columns:1fr; gap:16px; margin-top:42px }
+}
+@media (max-width:640px){
+  .cases{ padding:44px 14px 42px; border-radius:22px }
+  .cases__head p{ font-size:11.5px }
+  .case__body{ padding:18px 8px 20px }
+  .case__head h3{ font-size:15.5px }
+  .case__stats{ gap:8px; margin-top:18px; padding-bottom:18px }
+  .case__stats b{ font-size:16px }
+  .case__stats i{ font-size:8px; letter-spacing:.08em }
+  .case__text{ font-size:12px }
+}
+
+
+/* ---------- icônes Google flottantes sur la section campagnes ---------- */
+.cases__float{ position:absolute; inset:0; z-index:0; pointer-events:none; overflow:hidden }
+.cases__float img{
+  position:absolute; display:block; height:auto;
+  filter:drop-shadow(0 16px 28px rgba(20,40,25,.14));
+  animation:cases-float var(--t,10s) ease-in-out infinite;
+  animation-delay:var(--delay,0s);
+}
+.cases__ggl--1{ width:82px; top:3%; left:4%; opacity:.9; --t:9s }
+.cases__ggl--2{ width:68px; top:4%; right:5%; opacity:.88; --t:11s; --delay:-3s }
+@keyframes cases-float{ 50%{ transform:translateY(-16px) rotate(4deg) } }
+@media (max-width:640px){
+  .cases__ggl--1{ width:48px; top:1%; left:2% }
+  .cases__ggl--2{ width:42px; top:1%; right:3% }
+}

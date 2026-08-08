@@ -1,0 +1,120 @@
+/* ============================================================
+   SECTION 3 — LES CRÉATIVES (double carrousel infini)
+   ============================================================ */
+
+.creas{
+  position:relative;
+  width:min(var(--page-max), 100%);
+  padding:66px 0 0;                /* pas de padding bas : le téléphone occupe la zone basse */
+  border-radius:var(--radius-panel);
+  overflow:hidden; isolation:isolate;
+  box-shadow:var(--shadow-panel);
+
+  /* fond blanc cassé + trame de points */
+  background-color:var(--cream);
+  background-image:radial-gradient(circle, rgba(22,34,27,.12) 1.15px, transparent 1.25px);
+  background-size:21px 21px;
+
+  --rail-h:250px;
+}
+
+/* halo clair derrière le titre : dégage les points sous le texte */
+.creas::before{
+  content:""; position:absolute; inset:0; z-index:0; pointer-events:none;
+  background:radial-gradient(72% 42% at 50% 2%, rgba(248,246,241,.97) 34%, rgba(248,246,241,0) 72%);
+}
+
+.creas__head{
+  position:relative; z-index:2;
+  max-width:640px; margin:0 auto; padding:0 26px;
+  text-align:center;
+}
+.creas__head h2{
+  font-size:clamp(24px, 3vw, 34px);
+  font-weight:700; line-height:1.16; letter-spacing:-.032em;
+}
+.creas__head h2 em{
+  font-family:var(--font-serif); font-style:italic; font-weight:500;
+  color:var(--brand); font-size:1.05em; letter-spacing:-.005em;
+}
+.creas__head p{
+  margin-top:14px;
+  font-size:12.5px; line-height:1.75; font-weight:500;
+  color:var(--ink-soft);
+}
+.creas__head p b{ color:var(--brand); font-weight:700 }
+
+/* ---------- rails ---------- */
+.rails{ position:relative; z-index:1; margin-top:52px; display:grid; gap:20px }
+
+.rail{
+  overflow:hidden;
+  -webkit-mask-image:linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+          mask-image:linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+}
+.rail__track{
+  display:flex; gap:20px; width:max-content;
+  animation:rail-slide var(--dur, 70s) linear infinite;
+  will-change:transform;
+}
+/* la piste est dupliquée par scripts/creatives.js → -50% = une boucle pile poil */
+@keyframes rail-slide{ to{ transform:translateX(-50%) } }
+
+.rail--reverse .rail__track{ animation-direction:reverse }
+.rail:hover .rail__track{ animation-play-state:paused }
+
+.crea{
+  position:relative; flex:0 0 auto;
+  height:var(--rail-h);
+  border-radius:14px; overflow:hidden;
+  background:#e9e7e2; cursor:pointer;
+  box-shadow:0 12px 26px -14px rgba(15,20,17,.42), 0 2px 5px rgba(15,20,17,.1);
+  transition:transform .45s var(--ease-out), box-shadow .45s ease;
+}
+.crea img{ height:100%; width:auto; display:block }
+.crea::after{
+  content:""; position:absolute; inset:0;
+  background:linear-gradient(112deg, transparent 36%, rgba(255,255,255,.34) 50%, transparent 64%);
+  transform:translateX(-120%);
+}
+.crea:hover{
+  transform:translateY(-10px) scale(1.045);
+  box-shadow:0 28px 44px -18px rgba(9,73,47,.5), 0 3px 8px rgba(15,20,17,.16);
+  z-index:5;
+}
+.crea:hover::after{
+  transform:translateX(120%);
+  transition:transform .9s cubic-bezier(.32,.66,.28,1);
+}
+
+/* ============================================================
+   TÉLÉPHONE EN BAS DE SECTION
+   Occupe une zone ajoutée sous les rails. Le bas du téléphone
+   est rogné par overflow:hidden (déjà sur .creas) : la section
+   suivante « déroulé » vient chevaucher visuellement.
+   Fond transparent → aucun rectangle, animation gauche-droite.
+   ============================================================ */
+.creas__phone{
+  position:relative; z-index:5;
+  margin-top:-120px;               /* remonte : le téléphone dépasse de moitié sur le carrousel */
+  height:280px;                    /* zone visible ; le bas sort du cadre */
+  pointer-events:none;
+}
+.creas__phone img{
+  position:absolute; left:50%; top:0;
+  width:280px; height:auto;
+  transform:translateX(-50%);
+  filter:drop-shadow(0 30px 44px rgba(15,25,20,.28));
+  animation:creas-phone-sway 6.5s ease-in-out infinite;
+}
+@keyframes creas-phone-sway{
+  0%,100%{ transform:translateX(calc(-50% - 16px)) rotate(-2.5deg) }
+  50%    { transform:translateX(calc(-50% + 16px)) rotate(2.5deg) }
+}
+@media (max-width:640px){
+  .creas__phone{ margin-top:34px; height:240px }
+  .creas__phone img{ width:220px }
+}
+@media (prefers-reduced-motion:reduce){
+  .creas__phone img{ animation:none }
+}

@@ -1,0 +1,65 @@
+/* ============================================================
+   MISE EN PAGE — LANDING PAGE D'UN SEUL TENANT
+   Chargé EN DERNIER : ce fichier écrase volontairement la
+   coquille « panneau flottant » des feuilles de section.
+
+   Avant : chaque section était une carte arrondie posée sur un
+   fond dégradé, avec des gouttières entre elles.
+   Maintenant : les sections s'enchaînent bord à bord, et c'est
+   leur couleur de fond qui marque la séparation.
+   ============================================================ */
+
+body{
+  display:block;
+  padding:0;
+  gap:0;
+  background:#ffffff;
+}
+
+/* plus de carte : pleine largeur, sans coin arrondi ni ombre.
+   width:100% est indispensable : sans lui, une section dont un
+   enfant est en width:max-content (les rails) se dimensionne sur
+   son contenu et déborde de plusieurs milliers de pixels. */
+.panel-shell,
+.creas,
+.reviews,
+.ia,
+.lp{
+  width:100%;
+  max-width:none;
+  border-radius:0;
+  box-shadow:none;
+}
+
+/* Le contenu reste centré à --page-max sans toucher au HTML :
+   la marge latérale absorbe tout l'espace au-delà de 1120px. */
+.hero-panel,
+.regies,
+.process,
+.cases,
+.vs,
+.reviews,
+.faq,
+.end{
+  padding-inline:max(24px, calc((100% - var(--page-max)) / 2));
+}
+
+/* Sections dont le contenu doit filer jusqu'aux bords :
+   les rails de créatives et l'éventail des preuves. */
+.creas,
+.proof{ padding-inline:0 }
+
+/* les arrondis internes restent (cartes, blocs, boutons) */
+.panel-shell.hero-panel{ border-radius:0 }
+
+@media (max-width:640px){
+  .hero-panel,
+  .regies,
+  .process,
+  .cases,
+  .vs,
+  .reviews,
+  .faq,
+  .end{ padding-inline:16px }
+  .creas, .proof{ padding-inline:0 }
+}

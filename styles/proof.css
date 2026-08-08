@@ -1,0 +1,192 @@
+/* ============================================================
+   SECTION 5 — PREUVES (comptes publicitaires réels)
+   Fond blanc, icônes Google flottantes, éventail de captures.
+   La géométrie de l'éventail est calculée par scripts/proof.js
+   ============================================================ */
+
+.proof{
+  padding:64px 40px 72px;
+  background:#ffffff;
+  --grain-opacity:.12;
+  --pc-w:186px;
+  --pc-h:252px;
+  --pc-overlap:-58px;
+}
+
+/* ---------- icônes Google en fond ---------- */
+.proof__bg{ position:absolute; inset:0; z-index:0; pointer-events:none; overflow:hidden }
+.proof__icon{
+  position:absolute; display:block; height:auto;
+  filter:drop-shadow(0 18px 30px rgba(20,30,25,.14));
+  animation:proof-float var(--t, 9s) ease-in-out infinite;
+  animation-delay:var(--delay, 0s);
+}
+.proof__icon--1{ width:96px;  top:12%;  left:4%;   opacity:.9;  --t:9s }
+.proof__icon--2{ width:62px;  top:64%;  left:11%;  opacity:.55; --t:11s; --delay:-3s; filter:blur(1.5px) }
+.proof__icon--3{ width:112px; top:8%;   right:5%;  opacity:.92; --t:10s; --delay:-5s }
+.proof__icon--4{ width:74px;  top:70%;  right:9%;  opacity:.4;  --t:12s; --delay:-1.5s; filter:blur(2.5px) }
+@keyframes proof-float{
+  50%{ transform:translateY(-16px) rotate(4deg) }
+}
+
+/* voile blanc qui dégage le texte des icônes */
+.proof::before{
+  content:""; position:absolute; inset:0; z-index:1; pointer-events:none;
+  background:radial-gradient(58% 38% at 50% 8%, #fff 42%, rgba(255,255,255,0) 76%);
+}
+
+/* ---------- en-tête ---------- */
+.proof__head{ position:relative; z-index:2; max-width:640px; margin:0 auto; text-align:center }
+.proof__eyebrow{
+  display:inline-block; margin-bottom:14px;
+  font-size:10.5px; font-weight:800; letter-spacing:.16em;
+  color:var(--brand);
+}
+.proof__head h2{
+  font-size:clamp(24px, 3vw, 34px);
+  font-weight:700; line-height:1.16; letter-spacing:-.032em;
+}
+.proof__head h2 em{
+  font-family:var(--font-serif); font-style:italic; font-weight:500;
+  color:var(--brand); font-size:1.05em; letter-spacing:-.005em;
+}
+.proof__head p{
+  margin-top:14px;
+  font-size:12.5px; line-height:1.75; font-weight:500;
+  color:var(--ink-soft);
+}
+
+/* ---------- éventail de captures ---------- */
+.proof__stage{
+  position:relative; z-index:2;
+  margin-top:56px;
+  height:calc(var(--pc-h) + 74px);
+  perspective:1400px;
+}
+.proof__fan{
+  position:absolute; left:50%; top:10px;
+  transform:translateX(-50%);
+  display:flex; align-items:flex-start;
+  transform-style:preserve-3d;
+}
+
+.pcard{
+  position:relative; flex:0 0 auto;
+  width:var(--pc-w); height:var(--pc-h);
+  margin-left:var(--pc-overlap);
+  border-radius:16px; overflow:hidden;
+  background:#0d120f;
+  box-shadow:0 18px 32px -16px rgba(15,25,20,.45), 0 3px 8px rgba(15,25,20,.14);
+  cursor:pointer;
+  /* état initial : empilées au centre */
+  opacity:0;
+  transform:translateY(26px) rotate(0deg) scale(.82);
+  transition:transform .2s var(--ease-spring), box-shadow .4s ease, filter .4s ease;
+}
+.pcard:first-child{ margin-left:0 }
+
+/* --rest et --d sont posés par scripts/proof.js */
+.proof__stage.in .pcard{
+  opacity:1;
+  transform:var(--rest);
+  transition:
+    transform  .95s var(--ease-out) var(--d),
+    opacity    .55s ease            var(--d),
+    box-shadow .4s ease,
+    filter     .4s ease;
+}
+
+.pcard img{
+  width:100%; height:100%;
+  object-fit:cover;
+  display:block;
+  transition:transform .7s var(--ease-out);
+}
+.proof__fan:hover .pcard{ filter:saturate(.72) brightness(.94) }
+.proof__fan .pcard:hover{
+  transform:var(--rest) translateY(-26px) rotate(0deg) scale(1.1);
+  filter:none; z-index:40;
+  box-shadow:0 34px 50px -18px rgba(9,73,47,.5), 0 4px 10px rgba(15,25,20,.2);
+}
+.pcard:hover img{ transform:scale(1.06) }
+
+/* carte mise en avant (la dernière) */
+.pcard--hl{ box-shadow:0 0 0 2px var(--brand-soft), 0 18px 32px -16px rgba(15,25,20,.45) }
+.pcard--hl:hover{ box-shadow:0 0 0 2px var(--brand-soft), 0 34px 50px -18px rgba(9,73,47,.5) }
+
+/* ---------- récap en bas de carte ---------- */
+.pcard__foot{
+  position:absolute; left:0; right:0; bottom:0; z-index:3;
+  padding:34px 12px 12px;
+  background:linear-gradient(to top, rgba(6,14,10,.96) 42%, rgba(6,14,10,.72) 70%, transparent);
+  color:#fff;
+}
+.pcard__badge{
+  display:inline-flex; align-items:center; gap:5px;
+  margin-bottom:7px; padding:3.5px 8px;
+  border-radius:999px;
+  background:rgba(255,255,255,.14);
+  box-shadow:0 0 0 1px rgba(255,255,255,.14) inset;
+  font-size:8.5px; font-weight:700; letter-spacing:.03em;
+}
+.pcard__badge::before{
+  content:""; width:5px; height:5px; border-radius:50%; background:var(--dot, #4285F4);
+}
+.pcard__badge--google{ --dot:#4285F4 }
+.pcard__badge--meta{ --dot:#0866FF }
+
+.pcard__stat{
+  display:block;
+  font-size:12.5px; font-weight:700; letter-spacing:-.02em; line-height:1.2;
+}
+.pcard__sector{
+  display:block; margin-top:3px;
+  font-size:10px; font-weight:600;
+  color:rgba(255,255,255,.62);
+}
+
+/* ---------- responsive ----------
+   Sous 900px l'éventail devient un carrousel qui se fait glisser :
+   7 captures superposées deviennent illisibles sur un petit écran. */
+@media (max-width:900px){
+  .proof{ --pc-w:168px; --pc-h:228px; padding:52px 0 56px }
+  .proof__head{ padding:0 26px }
+
+  .proof__stage{
+    height:auto; margin-top:40px; perspective:none;
+    overflow-x:auto; overflow-y:hidden;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+    padding:6px 26px 10px;
+  }
+  .proof__stage::-webkit-scrollbar{ display:none }
+
+  .proof__fan{
+    position:static; transform:none;
+    display:flex; gap:12px; width:max-content;
+  }
+  .pcard{
+    margin-left:0 !important;
+    scroll-snap-align:center;
+    /* on annule la géométrie de l'éventail posée en inline */
+    transform:none !important;
+    opacity:1 !important;
+  }
+  .proof__fan:hover .pcard{ filter:none }
+  .proof__fan .pcard:hover{ transform:none !important; z-index:auto }
+  .pcard:hover img{ transform:none }
+}
+
+@media (max-width:640px){
+  .proof{ --pc-w:152px; --pc-h:206px; padding:42px 0 46px; border-radius:22px }
+  .proof__head{ padding:0 16px }
+  .proof__head p{ font-size:11.5px }
+  .proof__icon--1{ width:58px } .proof__icon--3{ width:64px }
+  .proof__icon--2, .proof__icon--4{ display:none }
+  .proof__stage{ padding:6px 16px 10px }
+}
+
+@media (prefers-reduced-motion:reduce){
+  .proof__icon{ animation:none }
+}

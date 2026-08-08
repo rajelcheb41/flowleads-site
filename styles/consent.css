@@ -1,0 +1,40 @@
+/* ============================================================
+   BANDEAU DE CONSENTEMENT COOKIES
+   ============================================================ */
+.fl-consent{
+  position:fixed; left:16px; right:16px; bottom:16px; z-index:900;
+  max-width:640px; margin:0 auto;
+  display:flex; flex-wrap:wrap; align-items:center; gap:14px;
+  padding:16px 20px;
+  background:#fff;
+  border-radius:16px;
+  box-shadow:0 0 0 1px #E4E1DA inset, 0 20px 44px -20px rgba(15,25,20,.35);
+  animation:fl-consent-in .5s var(--ease-out, ease) .2s both;
+}
+@keyframes fl-consent-in{
+  from{ opacity:0; transform:translateY(16px) }
+  to{ opacity:1; transform:none }
+}
+.fl-consent p{
+  flex:1 1 260px; margin:0;
+  font-size:12px; line-height:1.6; color:var(--ink-soft, #6f736f);
+}
+.fl-consent p a{ color:var(--brand, #09492f); font-weight:700; text-decoration:underline }
+.fl-consent__actions{ display:flex; gap:8px; flex:0 0 auto }
+.fl-consent__actions button{
+  padding:9px 16px; border-radius:999px; border:0; cursor:pointer;
+  font-family:inherit; font-size:12px; font-weight:700;
+  transition:transform .2s var(--ease-out, ease), opacity .2s ease;
+}
+.fl-consent__actions button:hover{ transform:translateY(-1px) }
+.fl-consent__decline{
+  background:transparent; color:var(--ink-soft, #6f736f);
+  box-shadow:0 0 0 1px #E4E1DA inset;
+}
+.fl-consent__accept{
+  background:var(--brand, #09492f); color:#fff;
+}
+@media (max-width:480px){
+  .fl-consent{ padding:14px 16px; gap:10px }
+  .fl-consent__actions{ width:100%; justify-content:flex-end }
+}

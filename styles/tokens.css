@@ -1,0 +1,45 @@
+/* ============================================================
+   FLOWLEADS — DESIGN TOKENS
+   Source unique de vérité. Ne pas redéfinir ces valeurs ailleurs.
+   ============================================================ */
+
+:root{
+  /* ---- couleurs de marque ---- */
+  --brand:        #09492f;   /* vert principal : CTA, italiques, accents */
+  --brand-deep:   #00421d;   /* vert du trait manuscrit sous la headline */
+  --brand-soft:   #3ECF8E;   /* vert clair : liserés, soulignements */
+  --brand-glow:   #7CE8A6;   /* vert lumineux : halo du bouton */
+
+  /* ---- neutres ---- */
+  --ink:          #111412;   /* texte principal */
+  --ink-soft:     #6f736f;   /* texte secondaire */
+  --ink-mute:     #83877f;   /* légendes */
+  --line:         #e3e1dc;   /* bordures */
+  --panel:        #faf9f7;   /* fond des panneaux */
+  --cream:        #F8F6F1;   /* fond de la section créatives */
+
+  /* ---- typographie ---- */
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono:  ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+
+  /* ---- formes ---- */
+  --radius-panel: 30px;
+  --radius-card:  16px;
+  --radius-btn:   16px;
+
+  /* ---- ombres ---- */
+  --shadow-panel:
+    0 1px 0 rgba(255,255,255,.9) inset,
+    0 2px 6px rgba(20,22,26,.05),
+    0 34px 70px -24px rgba(20,22,26,.35);
+
+  /* ---- courbes d'animation ----
+     out    : sortie douce, pour les apparitions et les déplacements
+     spring : léger rebond, pour les micro-interactions */
+  --ease-out:    cubic-bezier(.16, 1, .3, 1);
+  --ease-spring: cubic-bezier(.22, .61, .36, 1);
+
+  /* ---- dimensions ---- */
+  --page-max: 1120px;
+}

@@ -1,0 +1,128 @@
+/* ============================================================
+   BLOG — nouvelle section, fichier ajouté sans toucher aux
+   autres styles. Réutilise les tokens de marque (tokens.css)
+   et la même typographie que les modales légales (voir
+   modal.css .lmodal__body) pour rester visuellement cohérent.
+   ============================================================ */
+
+.article{
+  max-width:720px;
+  margin:0 auto;
+  padding:56px 24px 90px;
+}
+.article h1{
+  max-width:22ch;
+  font-size:clamp(26px,4.2vw,38px); font-weight:700; letter-spacing:-.03em; line-height:1.14;
+  margin-bottom:18px;
+}
+.article h2{
+  margin-top:38px; margin-bottom:12px;
+  font-size:19px; font-weight:700; letter-spacing:-.02em; color:var(--ink);
+}
+.article h3{
+  margin-top:24px; margin-bottom:8px;
+  font-size:15.5px; font-weight:700; letter-spacing:-.01em; color:var(--brand);
+}
+.article p{
+  margin-top:13px;
+  font-size:14.5px; line-height:1.8; font-weight:500; color:#3E453F;
+}
+.article ul, .article ol{ margin-top:13px; padding-left:4px; list-style:none }
+.article ol{ counter-reset:art-ol }
+.article ul li, .article ol li{
+  position:relative;
+  margin-top:10px; padding-left:22px;
+  font-size:14.5px; line-height:1.75; font-weight:500; color:#3E453F;
+}
+.article ul li::before{
+  content:""; position:absolute; left:2px; top:10px;
+  width:5px; height:5px; border-radius:50%; background:var(--brand-soft);
+}
+.article ol li{ counter-increment:art-ol }
+.article ol li::before{
+  content:counter(art-ol) ".";
+  position:absolute; left:0; top:0;
+  font-weight:700; color:var(--brand); font-size:13px;
+}
+.article dl{ margin-top:13px }
+.article dt{
+  margin-top:18px; font-size:14.5px; font-weight:700; letter-spacing:-.01em; color:var(--brand);
+}
+.article dd{
+  margin:6px 0 0; font-size:14.5px; line-height:1.75; font-weight:500; color:#3E453F;
+}
+.article table{
+  width:100%; margin-top:16px; border-collapse:collapse; font-size:13.5px;
+}
+.article th, .article td{
+  padding:10px 12px; text-align:left; border-bottom:1px solid var(--line); vertical-align:top;
+}
+.article th{ font-weight:700; color:var(--ink); background:var(--panel) }
+.article td{ color:#3E453F; font-weight:500 }
+.article b, .article strong{ font-weight:700; color:var(--ink) }
+.article a{ color:var(--brand); font-weight:600; text-decoration:none; border-bottom:1.5px solid var(--brand-soft) }
+.article a:hover{ border-bottom-color:var(--brand) }
+
+.article__meta{
+  display:flex; gap:10px; align-items:center;
+  margin-bottom:6px;
+  font-size:11.5px; font-weight:600; color:var(--ink-mute);
+}
+
+/* bandeau CTA de fin d'article, réutilise le style bouton existant */
+.article__cta{
+  margin-top:48px; padding:28px 26px;
+  border-radius:var(--radius-card);
+  background:var(--panel);
+  box-shadow:0 0 0 1px var(--line) inset;
+  text-align:center;
+}
+.article__cta p{ margin-top:0; margin-bottom:16px; color:var(--ink-soft) }
+
+/* liens internes en pied d'article (page pilier, page secteur…) */
+.article__related{
+  margin-top:20px; padding-top:20px;
+  border-top:1px solid var(--line);
+  font-size:13px;
+}
+.article__related h4{
+  font-size:11px; font-weight:800; letter-spacing:.08em; text-transform:uppercase;
+  color:var(--ink-mute); margin-bottom:10px;
+}
+.article__related ul{ margin-top:0; list-style:none; padding:0; display:flex; flex-direction:column; gap:6px }
+.article__related li{ margin:0; padding:0; font-size:13.5px; font-weight:600 }
+.article__related li::before{ content:none }
+
+/* ---- index du blog ---- */
+.blog-grid{
+  max-width:var(--page-max);
+  margin:0 auto;
+  padding:0 24px 90px;
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(260px, 1fr));
+  gap:18px;
+}
+.blog-card{
+  display:block; padding:22px;
+  border-radius:var(--radius-card);
+  background:#fff;
+  box-shadow:0 0 0 1px var(--line);
+  text-decoration:none;
+  transition:box-shadow .25s ease, transform .25s var(--ease-spring);
+}
+.blog-card:hover{ box-shadow:0 0 0 1.5px var(--brand); transform:translateY(-2px) }
+.blog-card__tag{
+  display:inline-block; margin-bottom:10px;
+  font-size:10px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; color:var(--brand);
+}
+.blog-card h3{
+  font-size:15.5px; font-weight:700; letter-spacing:-.015em; color:var(--ink); line-height:1.35;
+}
+.blog-card p{
+  margin-top:8px; font-size:13px; line-height:1.6; color:var(--ink-soft); font-weight:500;
+}
+
+@media (max-width:640px){
+  .article{ padding:0 16px 60px }
+  .article p, .article ul li, .article ol li{ font-size:14px }
+}

@@ -1,0 +1,304 @@
+/* ============================================================
+   SECTION 1 — HERO
+   ============================================================ */
+
+.hero-panel{
+  padding:26px 34px 64px;
+  background-color:#f9f9f8;
+  background-image:url("../assets/img/hero-bg-desktop.webp");
+  background-size:cover;
+  background-position:center;
+  --grain-opacity:.16;
+}
+
+/* ---------- barre de navigation ---------- */
+.nav{
+  position:relative; z-index:5;
+  display:flex; align-items:center; justify-content:space-between; gap:24px;
+}
+.nav__brand img{ height:30px; width:auto; display:block }
+
+.nav__links{ display:flex; align-items:center; gap:22px }
+.nav__links a{
+  display:inline-flex; align-items:center; gap:6px;
+  color:#171a18; text-decoration:none;
+  font-size:12.5px; font-weight:500; letter-spacing:-.01em;
+  opacity:.88;
+  transition:opacity .2s ease, color .2s ease;
+}
+.nav__links a:hover{ opacity:1; color:var(--brand) }
+
+.nav__dot{
+  position:relative; display:inline-block;
+  width:11px; height:11px; border-radius:50%;
+  border:1.6px solid var(--brand);
+}
+.nav__dot::after{
+  content:""; position:absolute; inset:2.6px;
+  border-radius:50%; background:var(--brand);
+}
+
+/* ---------- contenu ---------- */
+.hero__body{ position:relative; z-index:4; text-align:center; margin-top:46px }
+
+.hero__title{
+  max-width:16ch; margin:0 auto;
+  font-size:clamp(27px, 7.4vw, 50px);
+  font-weight:700; line-height:1.12; letter-spacing:-.035em;
+}
+.hero__title em{
+  position:relative; display:inline-block;
+  font-family:var(--font-serif); font-style:italic; font-weight:500;
+  color:var(--brand);
+  font-size:1.06em; letter-spacing:-.005em;
+}
+
+/* trait manuscrit — le tracé est animé par scripts/hero.js */
+.scribble{
+  position:absolute; left:-5%; bottom:-.26em;
+  width:110%; height:.30em;
+  overflow:visible; pointer-events:none;
+}
+.scribble path{
+  fill:none;
+  stroke:var(--brand-deep);
+  stroke-width:9;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+.hero__sub{
+  position:relative; z-index:4;
+  max-width:465px; margin:18px auto 0;
+  font-size:11.5px; line-height:1.75; font-weight:500;
+  color:#7c807c; text-align:center;
+}
+
+/* ---------- éventail de créatives ---------- */
+.fan-wrap{
+  position:relative; z-index:3;
+  width:100%; margin:30px auto 0;
+  height:calc(var(--card-h) + 62px);
+  perspective:1200px;
+  --card-w:140px;
+  --card-h:184px;
+  --overlap:-54px;
+}
+.fan{
+  position:absolute; left:50%; top:16px;
+  transform:translateX(-50%);
+  display:flex; align-items:flex-start;
+  transform-style:preserve-3d;
+  transition:transform .45s var(--ease-spring);
+}
+.fan__card{
+  position:relative; flex:0 0 auto;
+  width:var(--card-w); height:var(--card-h);
+  margin-left:var(--overlap);
+  border:2.5px solid #fff; border-radius:13px;
+  background:#e7e7e5; overflow:hidden; cursor:pointer;
+  box-shadow:0 12px 22px -10px rgba(15,20,17,.42), 0 2px 5px rgba(15,20,17,.14);
+  transform-origin:50% 120%;
+  /* état initial : empilées au centre, invisibles */
+  opacity:0;
+  transform:translateY(0) rotate(0) scale(.55);
+  transition:transform .18s var(--ease-spring), box-shadow .25s ease, filter .25s ease;
+}
+.fan__card:first-child{ margin-left:0 }
+.fan__card img{ width:100%; height:100%; object-fit:cover; display:block }
+.fan__card::after{
+  content:""; position:absolute; inset:0; pointer-events:none;
+  background:linear-gradient(115deg, rgba(255,255,255,.26) 0%, transparent 45%);
+}
+
+/* --rest et --d sont calculés par scripts/hero.js */
+.loaded .fan__card{
+  opacity:1;
+  transform:var(--rest);
+  transition:
+    transform  .85s var(--ease-out) var(--d),
+    opacity    .5s  ease            var(--d),
+    box-shadow .25s ease,
+    filter     .25s ease;
+}
+.loaded .fan:hover .fan__card{ filter:saturate(.7) brightness(.96) }
+.loaded .fan .fan__card:hover{
+  transform:var(--rest) translateY(-30px) rotate(0deg) scale(1.12);
+  filter:none; z-index:30;
+  box-shadow:0 30px 48px -14px rgba(9,73,47,.45), 0 3px 8px rgba(15,20,17,.18);
+}
+
+/* ---------- zone CTA ---------- */
+.hero__cta{
+  position:relative; z-index:4;
+  margin-top:26px;
+  display:flex; justify-content:center; align-items:center; gap:26px;
+}
+
+.link-underline{
+  display:inline-block; text-decoration:none;
+  position:relative; padding:3px 0;
+  background:none; border:0; cursor:pointer;
+  font:inherit; font-size:13px; font-weight:600;
+  color:var(--ink);
+  transition:color .25s ease;
+}
+.link-underline::after{
+  content:""; position:absolute; left:0; bottom:0;
+  width:100%; height:2px;
+  background:var(--brand-soft);
+  transform:scaleX(0); transform-origin:right;
+  transition:transform .3s var(--ease-spring);
+}
+.link-underline:hover{ color:var(--brand) }
+.link-underline:hover::after{ transform:scaleX(1); transform-origin:left }
+
+/* ============================================================
+   BOUTON CTA — base Uiverse (Spacious74), repalettisée Flowleads
+   Structure obligatoire :
+   <button class="btn"><span class="btn__blob"></span><span class="btn__inner">…</span></button>
+   ============================================================ */
+.btn{
+  position:relative;
+  display:inline-block;              /* .btn est un <a> : sans ça, pas de padding vertical */
+  text-decoration:none;
+  -webkit-tap-highlight-color:transparent;
+  padding:2px; border:none; border-radius:var(--radius-btn);
+  background:radial-gradient(circle 80px at 80% -10%, #ffffff, #09492f);
+  font-family:inherit; font-size:1rem; font-weight:600; letter-spacing:-.01em;
+  cursor:pointer;
+  transition:transform .22s var(--ease-spring);
+}
+.btn::after{
+  content:""; position:absolute; top:0; right:0;
+  width:65%; height:60%; border-radius:120px;
+  box-shadow:0 0 20px #ffffff38;
+  z-index:-1;
+}
+.btn:hover{ transform:translateY(-2px) }
+.btn:active{ transform:translateY(0) }
+
+.btn__blob{
+  position:absolute; left:0; bottom:0;
+  width:70px; height:100%; border-radius:var(--radius-btn);
+  background:radial-gradient(circle 60px at 0% 100%, var(--brand-glow), #0e6b4580, transparent);
+  box-shadow:-10px 10px 30px rgba(9,73,47,.22);
+  transition:box-shadow .3s ease, width .3s ease;
+}
+.btn:hover .btn__blob{ width:88px; box-shadow:-10px 10px 38px rgba(62,207,142,.45) }
+
+.btn__inner{
+  position:relative; z-index:3;
+  display:block; padding:14px 26px;
+  border-radius:14px; color:#fff;
+  background:radial-gradient(circle 80px at 80% -50%, #3f8f68, #09492f);
+}
+.btn__inner::before{
+  content:""; position:absolute; left:0; top:0;
+  width:100%; height:100%; border-radius:14px;
+  background:radial-gradient(circle 60px at 0% 100%, rgba(124,232,166,.13), rgba(9,73,47,.07), transparent);
+}
+
+/* variante compacte — header + CTA du bas */
+.btn--sm{ font-size:.78rem; border-radius:12px; padding:1.5px; margin-left:8px }
+.btn--sm .btn__inner{ padding:9px 17px; border-radius:10.5px }
+.btn--sm .btn__blob{ width:44px; border-radius:12px }
+.btn--sm:hover .btn__blob{ width:58px }
+
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .fan-wrap{ --card-w:96px; --card-h:126px; --overlap:-38px }
+}
+
+@media (max-width:640px){
+  .fan-wrap{
+    --card-w:96px; --card-h:126px; --overlap:-40px;
+    margin-top:24px;
+    height:calc(var(--card-h) + 46px);
+  }
+  .fan{ top:12px }
+
+  .hero-panel{
+    padding:16px 14px 38px;
+    border-radius:22px;
+    /* fond dédié : en cover, la version desktop rognerait les logos Meta / Google */
+    background-image:url("../assets/img/hero-bg-mobile.webp");
+  }
+  .nav__brand img{ height:26px }
+  .nav__links a{ display:none }        /* seul le bouton reste sur mobile */
+  .btn--sm{ margin-left:0; font-size:.72rem }
+  .btn--sm .btn__inner{ padding:8px 14px }
+
+  .hero__body{ margin-top:34px }
+  .hero__sub{ margin-top:14px; max-width:none; font-size:11px }
+  .hero__cta{ flex-direction:column; gap:14px; margin-top:22px }
+}
+
+/* ============================================================
+   MENU HAMBURGER (mobile) + MENU PLEIN ÉCRAN
+   ============================================================ */
+.nav__burger{
+  display:none;                    /* activé sous 640px */
+  flex-direction:column; gap:5px;
+  width:42px; height:42px; padding:11px;
+  border:0; border-radius:12px;
+  background:rgba(255,255,255,.7);
+  box-shadow:0 0 0 1px var(--line) inset;
+  cursor:pointer;
+  transition:background .2s ease;
+}
+.nav__burger span{
+  display:block; height:2px; width:100%;
+  background:var(--brand); border-radius:2px;
+  transition:transform .35s var(--ease-spring), opacity .25s ease;
+}
+.nav__burger[aria-expanded="true"] span:nth-child(1){ transform:translateY(7px) rotate(45deg) }
+.nav__burger[aria-expanded="true"] span:nth-child(2){ opacity:0 }
+.nav__burger[aria-expanded="true"] span:nth-child(3){ transform:translateY(-7px) rotate(-45deg) }
+
+.navmenu{
+  position:fixed; inset:0; z-index:900;
+  display:none;
+  background:rgba(6,20,13,.4);
+  backdrop-filter:blur(4px);
+  opacity:0; transition:opacity .3s ease;
+}
+.navmenu.open{ display:block; opacity:1 }
+.navmenu__panel{
+  position:absolute; top:0; right:0;
+  width:min(320px, 84%); height:100%;
+  display:flex; flex-direction:column; gap:4px;
+  padding:88px 24px 32px;
+  background:var(--panel);
+  box-shadow:-20px 0 60px -30px rgba(6,20,13,.6);
+  transform:translateX(100%);
+  transition:transform .4s var(--ease-out);
+}
+.navmenu.open .navmenu__panel{ transform:none }
+.navmenu__link{
+  padding:14px 4px;
+  font-size:16px; font-weight:600; letter-spacing:-.02em;
+  color:var(--ink); text-decoration:none;
+  border-bottom:1px solid var(--line);
+  transition:color .2s ease, padding-left .25s var(--ease-spring);
+}
+.navmenu__link:hover{ color:var(--brand); padding-left:10px }
+.navmenu__cta{ margin-top:20px; align-self:flex-start; font-size:.82rem }
+body.nav-open{ overflow:hidden }
+
+@media (max-width:640px){
+  .nav__burger{ display:flex }
+  .nav__links{ display:none }
+  .nav__links a{ display:none }     /* écrase la règle précédente qui gardait le bouton */
+}
+
+.navmenu__close{
+  position:absolute; top:20px; right:20px;
+  display:grid; place-items:center;
+  width:40px; height:40px; border:0; border-radius:50%;
+  background:#F1EFEA; color:#3E453F;
+  cursor:pointer;
+  transition:background .25s ease, color .25s ease, transform .3s var(--ease-spring);
+}
+.navmenu__close:hover{ background:var(--brand); color:#fff; transform:rotate(90deg) }
+.navmenu__close svg{ width:18px; height:18px }
