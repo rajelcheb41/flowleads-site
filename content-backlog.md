@@ -10,7 +10,7 @@ Cocher `[x]` une fois publié. Ne jamais republier un sujet déjà coché.
 
 ## Secteurs — page de pitch (« Publicité Meta & Google Ads pour {métier} »)
 
-- [ ] plombier-chauffagiste.html | Publicité Meta & Google Ads pour plombier-chauffagiste | pub facebook plombier | urgence + devis rapide
+- [x] plombier-chauffagiste.html | Publicité Meta & Google Ads pour plombier-chauffagiste | pub facebook plombier | urgence + devis rapide
 - [ ] kinesitherapeute.html | Publicité Meta & Google Ads pour kinésithérapeute | pub google ads kiné | remplir le planning, patientèle locale
 - [ ] dentiste.html | Publicité Meta & Google Ads pour cabinet dentaire | pub facebook dentiste | soins esthétiques, nouveaux patients
 - [ ] coiffeur.html | Publicité Meta & Google Ads pour salon de coiffure | pub instagram coiffeur | créneaux creux, fidélisation
