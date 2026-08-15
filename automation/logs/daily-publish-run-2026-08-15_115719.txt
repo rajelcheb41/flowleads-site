@@ -1,0 +1,3 @@
+﻿=== daily-publish run 2026-08-15_115719 ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== end run (exit code 1) ===

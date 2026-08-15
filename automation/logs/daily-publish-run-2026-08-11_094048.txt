@@ -1,0 +1,9 @@
+﻿=== daily-publish run 2026-08-11_094048 ===
+Article publi├® avec succ├¿s :
+
+- **Slug** : `kinesitherapeute.html` (secteur kin├®sith├®rapeute ÔÇö guardrail ├®ditorial appliqu├® : contenu 100% g├®n├®rique, aucune capture/chiffre/histoire client, avec une section honn├¬te sur la r├®glementation de la publicit├® pour cette profession de sant├®)
+- **D├®ploiement** : OK, en production, alias├® sur `flowleads.agency`
+- **V├®rifications** : page article 200, sitemap contient la nouvelle URL, homepage 200
+
+Backlog, sitemap et grille du blog mis ├á jour, et le log horodat├® ajout├® dans `automation/logs/daily-publish.log`.
+=== end run (exit code 0) ===

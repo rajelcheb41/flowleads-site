@@ -1,0 +1,3 @@
+﻿=== daily-publish run 2026-08-13_142011 ===
+Publication du jour termin├®e avec succ├¿s : **coiffeur.html** publi├® (secteur restreint ÔÇö contenu 100% conseil g├®n├®rique, sans capture de compte ni chiffre attribu├®, conform├®ment au garde-fou ├®ditorial), ajout├® au sitemap et ├á la grille du blog, backlog coch├®, d├®ploy├® en production sur flowleads.agency, et toutes les v├®rifications post-d├®ploiement passent (page 200, sitemap ├á jour, homepage 200).
+=== end run (exit code 0) ===

@@ -1,0 +1,5 @@
+﻿=== daily-publish run 2026-08-14_211223 ===
+Publication automatis├®e termin├®e avec succ├¿s.
+
+**R├®sum├®** : Article publi├® ÔÇö `blog/agence-immobiliere.html` (┬½ Publicit├® Meta & Google Ads pour agence immobili├¿re ┬╗), contenu 100% conseil g├®n├®rique conform├®ment au garde-fou ├®ditorial (secteur sans preuve portfolio Flowleads). Ajout├® au sitemap.xml et ├á la grille `blog/index.html`, ligne coch├®e dans `content-backlog.md`. D├®ploy├® en production via `vercel --prod --yes` et alias├® sur flowleads.agency. V├®rifications post-d├®ploiement toutes pass├®es : la nouvelle page, le sitemap et la homepage r├®pondent correctement. Ligne horodat├®e ajout├®e dans `automation/logs/daily-publish.log`.
+=== end run (exit code 0) ===

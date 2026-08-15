@@ -1,0 +1,7 @@
+﻿=== daily-publish run 2026-08-12_131529 ===
+Publication automatis├®e termin├®e avec succ├¿s :
+
+- **Article publi├®** : `dentiste.html` (┬½ Meta & Google Ads pour cabinet dentaire ┬╗), garde-fou ├®ditorial appliqu├® (secteur sans preuve portfolio ÔåÆ contenu 100% conseil g├®n├®rique, aucune capture d'├®cran, aucun chiffre attribu├® ├á Flowleads pour ce m├®tier).
+- **D├®ploiement** : `vercel --prod` r├®ussi, alias├® sur `flowleads.agency`.
+- **V├®rifications** : page article 200, sitemap.xml contient la nouvelle URL, homepage 200. Log ajout├® dans `automation/logs/daily-publish.log`.
+=== end run (exit code 0) ===

@@ -1,0 +1,5 @@
+2026-08-10 15:38:33 | slug: plombier-chauffagiste.html | déploiement: OK (prod, aliasé flowleads.agency) | vérifications: page 200, sitemap contient l'URL, homepage 200
+2026-08-11 09:45:16 | slug: kinesitherapeute.html | déploiement: OK (prod, aliasé flowleads.agency) | vérifications: page 200, sitemap contient l'URL, homepage 200
+2026-08-12 13:19:30 | Publié: dentiste.html | Déploiement prod: OK (aliased flowleads.agency) | Vérifications: /blog/dentiste.html 200, sitemap.xml contient l'URL, homepage 200
+2026-08-13 14:23:52 | slug=coiffeur.html | deploy=OK (prod, aliased flowleads.agency) | verif=OK (page 200, sitemap contains coiffeur.html, homepage 200)
+2026-08-14T19:15:55Z | Publié: agence-immobiliere.html | Déploiement prod: OK (vercel --prod) | Vérifications: page 200, homepage 200, sitemap.xml à jour | Guardrail éditorial appliqué (secteur sans preuve portfolio, contenu 100% conseil générique)
