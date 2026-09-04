@@ -15,7 +15,7 @@ Cocher `[x]` une fois publié. Ne jamais republier un sujet déjà coché.
 - [x] dentiste.html | Publicité Meta & Google Ads pour cabinet dentaire | pub facebook dentiste | soins esthétiques, nouveaux patients
 - [x] coiffeur.html | Publicité Meta & Google Ads pour salon de coiffure | pub instagram coiffeur | créneaux creux, fidélisation
 - [x] agence-immobiliere.html | Publicité Meta & Google Ads pour agence immobilière | pub facebook agence immobilière | mandats vendeurs, leads acheteurs
-- [ ] garage-automobile.html | Publicité Meta & Google Ads pour garage automobile | pub google ads garage auto | entretien, révision, pneus
+- [x] garage-automobile.html | Publicité Meta & Google Ads pour garage automobile | pub google ads garage auto | entretien, révision, pneus
 - [ ] institut-beaute.html | Publicité Meta & Google Ads pour institut de beauté | pub instagram institut beauté | soins, épilation, nouveaux clients
 - [ ] avocat.html | Publicité Meta & Google Ads pour cabinet d'avocats | pub google ads avocat | droit de la famille, droit du travail
 - [ ] expert-comptable.html | Publicité Meta & Google Ads pour expert-comptable | pub linkedin expert comptable | TPE, création d'entreprise
