@@ -17,7 +17,7 @@ Cocher `[x]` une fois publié. Ne jamais republier un sujet déjà coché.
 - [x] agence-immobiliere.html | Publicité Meta & Google Ads pour agence immobilière | pub facebook agence immobilière | mandats vendeurs, leads acheteurs
 - [x] garage-automobile.html | Publicité Meta & Google Ads pour garage automobile | pub google ads garage auto | entretien, révision, pneus
 - [x] institut-beaute.html | Publicité Meta & Google Ads pour institut de beauté | pub instagram institut beauté | soins, épilation, nouveaux clients
-- [ ] avocat.html | Publicité Meta & Google Ads pour cabinet d'avocats | pub google ads avocat | droit de la famille, droit du travail
+- [x] avocat.html | Publicité Meta & Google Ads pour cabinet d'avocats | pub google ads avocat | droit de la famille, droit du travail
 - [ ] expert-comptable.html | Publicité Meta & Google Ads pour expert-comptable | pub linkedin expert comptable | TPE, création d'entreprise
 - [ ] electricien.html | Publicité Meta & Google Ads pour électricien | pub facebook électricien | mise aux normes, dépannage
 - [ ] paysagiste.html | Publicité Meta & Google Ads pour paysagiste jardinier | pub facebook paysagiste | entretien jardin, aménagement extérieur
