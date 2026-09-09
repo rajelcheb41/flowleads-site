@@ -20,7 +20,7 @@ Cocher `[x]` une fois publié. Ne jamais republier un sujet déjà coché.
 - [x] avocat.html | Publicité Meta & Google Ads pour cabinet d'avocats | pub google ads avocat | droit de la famille, droit du travail
 - [x] expert-comptable.html | Publicité Meta & Google Ads pour expert-comptable | pub linkedin expert comptable | TPE, création d'entreprise
 - [x] electricien.html | Publicité Meta & Google Ads pour électricien | pub facebook électricien | mise aux normes, dépannage
-- [ ] paysagiste.html | Publicité Meta & Google Ads pour paysagiste jardinier | pub facebook paysagiste | entretien jardin, aménagement extérieur
+- [x] paysagiste.html | Publicité Meta & Google Ads pour paysagiste jardinier | pub facebook paysagiste | entretien jardin, aménagement extérieur
 - [ ] veterinaire.html | Publicité Meta & Google Ads pour clinique vétérinaire | pub google ads vétérinaire | nouveaux animaux, urgences
 - [ ] photographe.html | Publicité Meta & Google Ads pour photographe | pub instagram photographe mariage | mariage, portrait, entreprise
 - [ ] agence-voyage-locale.html | Publicité Meta & Google Ads pour agence de voyage locale | pub facebook agence voyage | séjours sur-mesure, groupes
