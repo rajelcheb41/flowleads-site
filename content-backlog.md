@@ -22,7 +22,7 @@ Cocher `[x]` une fois publié. Ne jamais republier un sujet déjà coché.
 - [x] electricien.html | Publicité Meta & Google Ads pour électricien | pub facebook électricien | mise aux normes, dépannage
 - [x] paysagiste.html | Publicité Meta & Google Ads pour paysagiste jardinier | pub facebook paysagiste | entretien jardin, aménagement extérieur
 - [x] veterinaire.html | Publicité Meta & Google Ads pour clinique vétérinaire | pub google ads vétérinaire | nouveaux animaux, urgences
-- [ ] photographe.html | Publicité Meta & Google Ads pour photographe | pub instagram photographe mariage | mariage, portrait, entreprise
+- [x] photographe.html | Publicité Meta & Google Ads pour photographe | pub instagram photographe mariage | mariage, portrait, entreprise
 - [ ] agence-voyage-locale.html | Publicité Meta & Google Ads pour agence de voyage locale | pub facebook agence voyage | séjours sur-mesure, groupes
 - [ ] cuisiniste.html | Publicité Meta & Google Ads pour cuisiniste | pub facebook cuisiniste | devis cuisine sur-mesure
 
