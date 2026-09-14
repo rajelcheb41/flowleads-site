@@ -28,7 +28,7 @@ Cocher `[x]` une fois publié. Ne jamais republier un sujet déjà coché.
 
 ## Secteurs — page informationnelle compagnon (« Comment trouver des clients pour {métier} »)
 
-- [ ] comment-trouver-clients-plombier.html | Comment trouver des clients quand on est plombier | trouver clients plombier | fiche Google, avis, astreinte
+- [x] comment-trouver-clients-plombier.html | Comment trouver des clients quand on est plombier | trouver clients plombier | fiche Google, avis, astreinte
 - [ ] comment-remplir-planning-kine.html | Comment remplir son planning de kinésithérapeute | remplir planning kiné | ordonnances, bouche-à-oreille médical, Doctolib
 - [ ] comment-trouver-patients-dentiste.html | Comment trouver de nouveaux patients pour un cabinet dentaire | trouver patients dentiste | avis Google, mutuelle, urgences
 - [ ] comment-remplir-planning-coiffeur.html | Comment remplir son planning de salon de coiffure | remplir planning coiffeur | créneaux creux, Instagram avant/après
