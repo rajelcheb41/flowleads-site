@@ -31,7 +31,7 @@ Cocher `[x]` une fois publié. Ne jamais republier un sujet déjà coché.
 - [x] comment-trouver-clients-plombier.html | Comment trouver des clients quand on est plombier | trouver clients plombier | fiche Google, avis, astreinte
 - [x] comment-remplir-planning-kine.html | Comment remplir son planning de kinésithérapeute | remplir planning kiné | ordonnances, bouche-à-oreille médical, Doctolib
 - [x] comment-trouver-patients-dentiste.html | Comment trouver de nouveaux patients pour un cabinet dentaire | trouver patients dentiste | avis Google, mutuelle, urgences
-- [ ] comment-remplir-planning-coiffeur.html | Comment remplir son planning de salon de coiffure | remplir planning coiffeur | créneaux creux, Instagram avant/après
+- [x] comment-remplir-planning-coiffeur.html | Comment remplir son planning de salon de coiffure | remplir planning coiffeur | créneaux creux, Instagram avant/après
 - [ ] comment-trouver-mandats-immobilier.html | Comment trouver des mandats de vente en immobilier | trouver mandats immobilier | estimation gratuite, secteur local
 - [ ] comment-remplir-planning-garage.html | Comment remplir le planning d'un garage automobile | remplir planning garage auto | contrôle technique, entretien saisonnier
 - [ ] comment-trouver-clients-institut-beaute.html | Comment trouver de nouveaux clients pour un institut de beauté | trouver clients institut beauté | offre découverte, Instagram
