@@ -36,7 +36,7 @@ Cocher `[x]` une fois publié. Ne jamais republier un sujet déjà coché.
 - [x] comment-remplir-planning-garage.html | Comment remplir le planning d'un garage automobile | remplir planning garage auto | contrôle technique, entretien saisonnier
 - [x] comment-trouver-clients-institut-beaute.html | Comment trouver de nouveaux clients pour un institut de beauté | trouver clients institut beauté | offre découverte, Instagram
 - [x] comment-trouver-clients-avocat.html | Comment trouver des clients quand on est avocat | trouver clients avocat | contenu juridique, réseau local
-- [ ] comment-trouver-clients-electricien.html | Comment trouver des clients quand on est électricien | trouver clients électricien | fiche Google, recommandations
+- [x] comment-trouver-clients-electricien.html | Comment trouver des clients quand on est électricien | trouver clients électricien | fiche Google, recommandations
 - [ ] comment-trouver-clients-veterinaire.html | Comment attirer de nouveaux clients pour une clinique vétérinaire | trouver clients vétérinaire | avis, urgences, fidélisation
 
 ## Articles informationnels génériques (marketing TPE/PME)
