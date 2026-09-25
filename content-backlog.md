@@ -41,7 +41,7 @@ Cocher `[x]` une fois publié. Ne jamais republier un sujet déjà coché.
 
 ## Articles informationnels génériques (marketing TPE/PME)
 
-- [ ] roi-publicite-meta-vs-google.html | ROI comparé : Meta Ads vs Google Ads pour une TPE | roi meta ads google ads | données chiffrées, cas concrets
+- [x] roi-publicite-meta-vs-google.html | ROI comparé : Meta Ads vs Google Ads pour une TPE | roi meta ads google ads | données chiffrées, cas concrets
 - [ ] erreurs-debutant-facebook-ads.html | Les 7 erreurs les plus fréquentes en Facebook Ads pour une TPE | erreurs facebook ads tpe | ciblage trop large, pas de suivi, créa générique
 - [ ] comment-choisir-agence-pub-locale.html | Comment choisir une agence de publicité pour son commerce local | choisir agence pub locale | critères, transparence, engagement
 - [ ] pourquoi-mes-pubs-facebook-ne-marchent-pas.html | Pourquoi mes publicités Facebook ne convertissent pas | pub facebook ne marche pas | diagnostic, tunnel de conversion, créa
