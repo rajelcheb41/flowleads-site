@@ -48,7 +48,7 @@ Cocher `[x]` une fois publié. Ne jamais republier un sujet déjà coché.
 - [x] google-my-business-vs-publicite-payante.html | Fiche Google Business Profile ou publicité payante : que privilégier | google my business ou pub payante | complémentarité, budget limité
 - [x] cout-par-lead-normal-tpe.html | Quel coût par lead est normal pour une TPE en 2026 | cout par lead normal | fourchettes par secteur, benchmarks
 - [x] retargeting-explique-tpe.html | Le retargeting expliqué simplement pour une TPE | retargeting publicité tpe | audience personnalisée, relance visiteurs
-- [ ] saisonnalite-publicite-locale.html | Adapter son budget publicitaire aux saisons quand on est un commerce local | saisonnalité publicité locale | pics d'activité, anticipation
+- [x] saisonnalite-publicite-locale.html | Adapter son budget publicitaire aux saisons quand on est un commerce local | saisonnalité publicité locale | pics d'activité, anticipation
 
 ---
 
