@@ -25,6 +25,12 @@ Cocher `[x]` une fois publié. Ne jamais republier un sujet déjà coché.
 - [x] photographe.html | Publicité Meta & Google Ads pour photographe | pub instagram photographe mariage | mariage, portrait, entreprise
 - [x] agence-voyage-locale.html | Publicité Meta & Google Ads pour agence de voyage locale | pub facebook agence voyage | séjours sur-mesure, groupes
 - [x] cuisiniste.html | Publicité Meta & Google Ads pour cuisiniste | pub facebook cuisiniste | devis cuisine sur-mesure
+- [x] serrurier.html | Publicité Meta & Google Ads pour serrurier | pub google ads serrurier urgence | urgence dépannage, confiance/tarifs transparents, lutte contre l'image d'arnaque
+- [ ] menuisier.html | Publicité Meta & Google Ads pour menuisier-agenceur | pub facebook menuisier | devis sur-mesure, agencement intérieur
+- [ ] osteopathe.html | Publicité Meta & Google Ads pour ostéopathe | pub google ads ostéopathe | patientèle locale, douleurs chroniques, Doctolib
+- [ ] coach-sportif.html | Publicité Meta & Google Ads pour coach sportif indépendant | pub instagram coach sportif | coaching individuel, programmes en ligne
+- [ ] traiteur-evenementiel.html | Publicité Meta & Google Ads pour traiteur événementiel | pub facebook traiteur | mariages, entreprises, devis groupe
+- [ ] fleuriste.html | Publicité Meta & Google Ads pour fleuriste | pub instagram fleuriste | occasions (mariage, deuil, fêtes), commandes en ligne, livraison locale
 
 ## Secteurs — page informationnelle compagnon (« Comment trouver des clients pour {métier} »)
 
@@ -38,6 +44,9 @@ Cocher `[x]` une fois publié. Ne jamais republier un sujet déjà coché.
 - [x] comment-trouver-clients-avocat.html | Comment trouver des clients quand on est avocat | trouver clients avocat | contenu juridique, réseau local
 - [x] comment-trouver-clients-electricien.html | Comment trouver des clients quand on est électricien | trouver clients électricien | fiche Google, recommandations
 - [x] comment-trouver-clients-veterinaire.html | Comment attirer de nouveaux clients pour une clinique vétérinaire | trouver clients vétérinaire | avis, urgences, fidélisation
+- [ ] comment-trouver-clients-serrurier.html | Comment trouver des clients quand on est serrurier | trouver clients serrurier | avis, urgence, SEO local, confiance
+- [ ] comment-trouver-clients-osteopathe.html | Comment remplir son planning d'ostéopathe | remplir planning ostéopathe | bouche-à-oreille médical, Doctolib, kiné-ostéo
+- [ ] comment-trouver-clients-coach-sportif.html | Comment trouver des clients comme coach sportif indépendant | trouver clients coach sportif | Instagram avant/après, essai gratuit
 
 ## Articles informationnels génériques (marketing TPE/PME)
 
@@ -49,6 +58,11 @@ Cocher `[x]` une fois publié. Ne jamais republier un sujet déjà coché.
 - [x] cout-par-lead-normal-tpe.html | Quel coût par lead est normal pour une TPE en 2026 | cout par lead normal | fourchettes par secteur, benchmarks
 - [x] retargeting-explique-tpe.html | Le retargeting expliqué simplement pour une TPE | retargeting publicité tpe | audience personnalisée, relance visiteurs
 - [x] saisonnalite-publicite-locale.html | Adapter son budget publicitaire aux saisons quand on est un commerce local | saisonnalité publicité locale | pics d'activité, anticipation
+- [ ] kpis-a-suivre-publicite-locale.html | Les KPIs essentiels à suivre pour une publicité locale efficace | kpi publicité locale | CPL, CTR, ROAS expliqués simplement
+- [ ] geociblage-publicite-locale.html | Le géociblage en publicité : bien définir sa zone de chalandise | géociblage publicité locale | rayon km, ciblage par ville/quartier
+- [ ] audience-lookalike-explique-tpe.html | L'audience similaire (lookalike) expliquée pour une TPE | audience lookalike meta ads | ciblage avancé, données clients
+- [ ] creas-publicitaires-qui-convertissent-tpe.html | Créer des visuels publicitaires qui convertissent pour un commerce local | créa publicitaire qui convertit | avant/après, témoignages, UGC
+- [ ] landing-page-ou-formulaire-facebook.html | Landing page ou formulaire natif Facebook : lequel choisir | formulaire facebook ou landing page | taux de conversion, qualité des leads
 
 ---
 
