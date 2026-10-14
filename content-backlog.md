@@ -26,7 +26,7 @@ Cocher `[x]` une fois publié. Ne jamais republier un sujet déjà coché.
 - [x] agence-voyage-locale.html | Publicité Meta & Google Ads pour agence de voyage locale | pub facebook agence voyage | séjours sur-mesure, groupes
 - [x] cuisiniste.html | Publicité Meta & Google Ads pour cuisiniste | pub facebook cuisiniste | devis cuisine sur-mesure
 - [x] serrurier.html | Publicité Meta & Google Ads pour serrurier | pub google ads serrurier urgence | urgence dépannage, confiance/tarifs transparents, lutte contre l'image d'arnaque
-- [ ] menuisier.html | Publicité Meta & Google Ads pour menuisier-agenceur | pub facebook menuisier | devis sur-mesure, agencement intérieur
+- [x] menuisier.html | Publicité Meta & Google Ads pour menuisier-agenceur | pub facebook menuisier | devis sur-mesure, agencement intérieur
 - [ ] osteopathe.html | Publicité Meta & Google Ads pour ostéopathe | pub google ads ostéopathe | patientèle locale, douleurs chroniques, Doctolib
 - [ ] coach-sportif.html | Publicité Meta & Google Ads pour coach sportif indépendant | pub instagram coach sportif | coaching individuel, programmes en ligne
 - [ ] traiteur-evenementiel.html | Publicité Meta & Google Ads pour traiteur événementiel | pub facebook traiteur | mariages, entreprises, devis groupe
