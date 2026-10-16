@@ -28,7 +28,7 @@ Cocher `[x]` une fois publié. Ne jamais republier un sujet déjà coché.
 - [x] serrurier.html | Publicité Meta & Google Ads pour serrurier | pub google ads serrurier urgence | urgence dépannage, confiance/tarifs transparents, lutte contre l'image d'arnaque
 - [x] menuisier.html | Publicité Meta & Google Ads pour menuisier-agenceur | pub facebook menuisier | devis sur-mesure, agencement intérieur
 - [x] osteopathe.html | Publicité Meta & Google Ads pour ostéopathe | pub google ads ostéopathe | patientèle locale, douleurs chroniques, Doctolib
-- [ ] coach-sportif.html | Publicité Meta & Google Ads pour coach sportif indépendant | pub instagram coach sportif | coaching individuel, programmes en ligne
+- [x] coach-sportif.html | Publicité Meta & Google Ads pour coach sportif indépendant | pub instagram coach sportif | coaching individuel, programmes en ligne
 - [ ] traiteur-evenementiel.html | Publicité Meta & Google Ads pour traiteur événementiel | pub facebook traiteur | mariages, entreprises, devis groupe
 - [ ] fleuriste.html | Publicité Meta & Google Ads pour fleuriste | pub instagram fleuriste | occasions (mariage, deuil, fêtes), commandes en ligne, livraison locale
 
