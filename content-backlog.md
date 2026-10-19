@@ -44,7 +44,7 @@ Cocher `[x]` une fois publié. Ne jamais republier un sujet déjà coché.
 - [x] comment-trouver-clients-avocat.html | Comment trouver des clients quand on est avocat | trouver clients avocat | contenu juridique, réseau local
 - [x] comment-trouver-clients-electricien.html | Comment trouver des clients quand on est électricien | trouver clients électricien | fiche Google, recommandations
 - [x] comment-trouver-clients-veterinaire.html | Comment attirer de nouveaux clients pour une clinique vétérinaire | trouver clients vétérinaire | avis, urgences, fidélisation
-- [ ] comment-trouver-clients-serrurier.html | Comment trouver des clients quand on est serrurier | trouver clients serrurier | avis, urgence, SEO local, confiance
+- [x] comment-trouver-clients-serrurier.html | Comment trouver des clients quand on est serrurier | trouver clients serrurier | avis, urgence, SEO local, confiance
 - [ ] comment-trouver-clients-osteopathe.html | Comment remplir son planning d'ostéopathe | remplir planning ostéopathe | bouche-à-oreille médical, Doctolib, kiné-ostéo
 - [ ] comment-trouver-clients-coach-sportif.html | Comment trouver des clients comme coach sportif indépendant | trouver clients coach sportif | Instagram avant/après, essai gratuit
 
