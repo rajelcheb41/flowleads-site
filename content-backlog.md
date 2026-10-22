@@ -58,7 +58,7 @@ Cocher `[x]` une fois publié. Ne jamais republier un sujet déjà coché.
 - [x] cout-par-lead-normal-tpe.html | Quel coût par lead est normal pour une TPE en 2026 | cout par lead normal | fourchettes par secteur, benchmarks
 - [x] retargeting-explique-tpe.html | Le retargeting expliqué simplement pour une TPE | retargeting publicité tpe | audience personnalisée, relance visiteurs
 - [x] saisonnalite-publicite-locale.html | Adapter son budget publicitaire aux saisons quand on est un commerce local | saisonnalité publicité locale | pics d'activité, anticipation
-- [ ] kpis-a-suivre-publicite-locale.html | Les KPIs essentiels à suivre pour une publicité locale efficace | kpi publicité locale | CPL, CTR, ROAS expliqués simplement
+- [x] kpis-a-suivre-publicite-locale.html | Les KPIs essentiels à suivre pour une publicité locale efficace | kpi publicité locale | CPL, CTR, ROAS expliqués simplement
 - [ ] geociblage-publicite-locale.html | Le géociblage en publicité : bien définir sa zone de chalandise | géociblage publicité locale | rayon km, ciblage par ville/quartier
 - [ ] audience-lookalike-explique-tpe.html | L'audience similaire (lookalike) expliquée pour une TPE | audience lookalike meta ads | ciblage avancé, données clients
 - [ ] creas-publicitaires-qui-convertissent-tpe.html | Créer des visuels publicitaires qui convertissent pour un commerce local | créa publicitaire qui convertit | avant/après, témoignages, UGC
