@@ -62,7 +62,7 @@ Cocher `[x]` une fois publié. Ne jamais republier un sujet déjà coché.
 - [x] geociblage-publicite-locale.html | Le géociblage en publicité : bien définir sa zone de chalandise | géociblage publicité locale | rayon km, ciblage par ville/quartier
 - [x] audience-lookalike-explique-tpe.html | L'audience similaire (lookalike) expliquée pour une TPE | audience lookalike meta ads | ciblage avancé, données clients
 - [x] creas-publicitaires-qui-convertissent-tpe.html | Créer des visuels publicitaires qui convertissent pour un commerce local | créa publicitaire qui convertit | avant/après, témoignages, UGC
-- [ ] landing-page-ou-formulaire-facebook.html | Landing page ou formulaire natif Facebook : lequel choisir | formulaire facebook ou landing page | taux de conversion, qualité des leads
+- [x] landing-page-ou-formulaire-facebook.html | Landing page ou formulaire natif Facebook : lequel choisir | formulaire facebook ou landing page | taux de conversion, qualité des leads
 
 ---
 
