@@ -47,6 +47,13 @@ Cocher `[x]` une fois publié. Ne jamais republier un sujet déjà coché.
 - [x] comment-trouver-clients-serrurier.html | Comment trouver des clients quand on est serrurier | trouver clients serrurier | avis, urgence, SEO local, confiance
 - [x] comment-trouver-clients-osteopathe.html | Comment remplir son planning d'ostéopathe | remplir planning ostéopathe | bouche-à-oreille médical, Doctolib, kiné-ostéo
 - [x] comment-trouver-clients-coach-sportif.html | Comment trouver des clients comme coach sportif indépendant | trouver clients coach sportif | Instagram avant/après, essai gratuit
+- [x] comment-trouver-clients-paysagiste.html | Comment trouver des clients comme paysagiste jardinier | trouver clients paysagiste | bouche-à-oreille, avant/après, saisonnalité
+- [ ] comment-trouver-clients-photographe.html | Comment trouver des clients comme photographe (mariage, portrait, entreprise) | trouver clients photographe | portfolio, avis, bouche-à-oreille
+- [ ] comment-trouver-clients-agence-voyage.html | Comment trouver des clients pour une agence de voyage locale | trouver clients agence de voyage | séjours sur-mesure, fidélisation, groupes
+- [ ] comment-trouver-clients-cuisiniste.html | Comment trouver des clients comme cuisiniste | trouver clients cuisiniste | devis, salon, avis clients
+- [ ] comment-trouver-clients-menuisier.html | Comment trouver des clients comme menuisier-agenceur | trouver clients menuisier | devis sur-mesure, bouche-à-oreille, avis
+- [ ] comment-trouver-clients-traiteur.html | Comment trouver des clients comme traiteur événementiel | trouver clients traiteur | mariages, entreprises, devis groupe
+- [ ] comment-trouver-clients-fleuriste.html | Comment trouver des clients comme fleuriste | trouver clients fleuriste | occasions, livraison locale, Instagram
 
 ## Articles informationnels génériques (marketing TPE/PME)
 
@@ -63,6 +70,11 @@ Cocher `[x]` une fois publié. Ne jamais republier un sujet déjà coché.
 - [x] audience-lookalike-explique-tpe.html | L'audience similaire (lookalike) expliquée pour une TPE | audience lookalike meta ads | ciblage avancé, données clients
 - [x] creas-publicitaires-qui-convertissent-tpe.html | Créer des visuels publicitaires qui convertissent pour un commerce local | créa publicitaire qui convertit | avant/après, témoignages, UGC
 - [x] landing-page-ou-formulaire-facebook.html | Landing page ou formulaire natif Facebook : lequel choisir | formulaire facebook ou landing page | taux de conversion, qualité des leads
+- [ ] performance-max-google-ads-tpe.html | Google Ads Performance Max expliqué simplement pour une TPE | performance max tpe | fonctionnement, avantages, limites
+- [ ] budget-minimum-publicite-locale.html | Quel budget minimum pour démarrer la publicité payante en local | budget minimum publicité locale | seuils réalistes par secteur
+- [ ] pixel-meta-conversions-api-explique.html | Pixel Meta et Conversions API expliqués simplement | pixel meta conversions api | tracking fiable, iOS 14, données
+- [ ] combien-temps-resultats-meta-ads.html | Combien de temps avant de voir des résultats avec Meta Ads | résultats meta ads délai | courbe d'apprentissage, patience, optimisation
+- [ ] advantage-plus-meta-ads-tpe.html | Meta Advantage+ expliqué pour une TPE | meta advantage+ tpe | automatisation, ciblage large, résultats
 
 ---
 
