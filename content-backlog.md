@@ -51,7 +51,7 @@ Cocher `[x]` une fois publié. Ne jamais republier un sujet déjà coché.
 - [x] comment-trouver-clients-photographe.html | Comment trouver des clients comme photographe (mariage, portrait, entreprise) | trouver clients photographe | portfolio, avis, bouche-à-oreille
 - [x] comment-trouver-clients-agence-voyage.html | Comment trouver des clients pour une agence de voyage locale | trouver clients agence de voyage | séjours sur-mesure, fidélisation, groupes
 - [x] comment-trouver-clients-cuisiniste.html | Comment trouver des clients comme cuisiniste | trouver clients cuisiniste | devis, salon, avis clients
-- [ ] comment-trouver-clients-menuisier.html | Comment trouver des clients comme menuisier-agenceur | trouver clients menuisier | devis sur-mesure, bouche-à-oreille, avis
+- [x] comment-trouver-clients-menuisier.html | Comment trouver des clients comme menuisier-agenceur | trouver clients menuisier | devis sur-mesure, bouche-à-oreille, avis
 - [ ] comment-trouver-clients-traiteur.html | Comment trouver des clients comme traiteur événementiel | trouver clients traiteur | mariages, entreprises, devis groupe
 - [ ] comment-trouver-clients-fleuriste.html | Comment trouver des clients comme fleuriste | trouver clients fleuriste | occasions, livraison locale, Instagram
 
