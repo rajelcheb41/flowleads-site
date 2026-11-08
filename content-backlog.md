@@ -71,7 +71,7 @@ Cocher `[x]` une fois publié. Ne jamais republier un sujet déjà coché.
 - [x] creas-publicitaires-qui-convertissent-tpe.html | Créer des visuels publicitaires qui convertissent pour un commerce local | créa publicitaire qui convertit | avant/après, témoignages, UGC
 - [x] landing-page-ou-formulaire-facebook.html | Landing page ou formulaire natif Facebook : lequel choisir | formulaire facebook ou landing page | taux de conversion, qualité des leads
 - [x] performance-max-google-ads-tpe.html | Google Ads Performance Max expliqué simplement pour une TPE | performance max tpe | fonctionnement, avantages, limites
-- [ ] budget-minimum-publicite-locale.html | Quel budget minimum pour démarrer la publicité payante en local | budget minimum publicité locale | seuils réalistes par secteur
+- [x] budget-minimum-publicite-locale.html | Quel budget minimum pour démarrer la publicité payante en local | budget minimum publicité locale | seuils réalistes par secteur
 - [ ] pixel-meta-conversions-api-explique.html | Pixel Meta et Conversions API expliqués simplement | pixel meta conversions api | tracking fiable, iOS 14, données
 - [ ] combien-temps-resultats-meta-ads.html | Combien de temps avant de voir des résultats avec Meta Ads | résultats meta ads délai | courbe d'apprentissage, patience, optimisation
 - [ ] advantage-plus-meta-ads-tpe.html | Meta Advantage+ expliqué pour une TPE | meta advantage+ tpe | automatisation, ciblage large, résultats
