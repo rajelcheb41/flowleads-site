@@ -73,8 +73,8 @@ Cocher `[x]` une fois publié. Ne jamais republier un sujet déjà coché.
 - [x] performance-max-google-ads-tpe.html | Google Ads Performance Max expliqué simplement pour une TPE | performance max tpe | fonctionnement, avantages, limites
 - [x] budget-minimum-publicite-locale.html | Quel budget minimum pour démarrer la publicité payante en local | budget minimum publicité locale | seuils réalistes par secteur
 - [x] pixel-meta-conversions-api-explique.html | Pixel Meta et Conversions API expliqués simplement | pixel meta conversions api | tracking fiable, iOS 14, données
-- [ ] combien-temps-resultats-meta-ads.html | Combien de temps avant de voir des résultats avec Meta Ads | résultats meta ads délai | courbe d'apprentissage, patience, optimisation
-- [ ] advantage-plus-meta-ads-tpe.html | Meta Advantage+ expliqué pour une TPE | meta advantage+ tpe | automatisation, ciblage large, résultats
+- [x] combien-temps-resultats-meta-ads.html | Combien de temps avant de voir des résultats avec Meta Ads | résultats meta ads délai | courbe d'apprentissage, patience, optimisation (déjà publié sous blog/combien-de-temps-resultats-ads.html)
+- [x] advantage-plus-meta-ads-tpe.html | Meta Advantage+ expliqué pour une TPE | meta advantage+ tpe | automatisation, ciblage large, résultats
 
 ---
 
