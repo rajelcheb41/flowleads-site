@@ -76,6 +76,10 @@ Cocher `[x]` une fois publié. Ne jamais republier un sujet déjà coché.
 - [x] combien-temps-resultats-meta-ads.html | Combien de temps avant de voir des résultats avec Meta Ads | résultats meta ads délai | courbe d'apprentissage, patience, optimisation (déjà publié sous blog/combien-de-temps-resultats-ads.html)
 - [x] advantage-plus-meta-ads-tpe.html | Meta Advantage+ expliqué pour une TPE | meta advantage+ tpe | automatisation, ciblage large, résultats
 
+## Articles ajoutés après épuisement du backlog initial
+
+- [x] black-friday-publicite-commerce-local.html | Black Friday et publicité locale : faut-il investir en Meta Ads et Google Ads quand on est une TPE ? | publicité black friday commerce local | tous les sujets ci-dessus étaient cochés le 19/11/2026 ; sujet choisi par l'agent, cohérent avec la ligne éditoriale (angle saisonnier, secteur par secteur)
+
 ---
 
 **Notes pour l'agent qui écrit** :
