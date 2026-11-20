@@ -79,6 +79,7 @@ Cocher `[x]` une fois publié. Ne jamais republier un sujet déjà coché.
 ## Articles ajoutés après épuisement du backlog initial
 
 - [x] black-friday-publicite-commerce-local.html | Black Friday et publicité locale : faut-il investir en Meta Ads et Google Ads quand on est une TPE ? | publicité black friday commerce local | tous les sujets ci-dessus étaient cochés le 19/11/2026 ; sujet choisi par l'agent, cohérent avec la ligne éditoriale (angle saisonnier, secteur par secteur)
+- [x] noel-publicite-commerce-local.html | Publicité de Noël pour un commerce local : le guide pour ne pas se tromper | publicité noël commerce local | backlog épuisé le 20/11/2026 ; sujet choisi par l'agent, suite logique de l'article Black Friday (angle saisonnier fin d'année, calendrier, budget, secteur par secteur)
 
 ---
 
